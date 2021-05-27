@@ -20,7 +20,7 @@ DB = os.environ.get("REDIS_DB")
 redis = redis.Redis(HOST, port=PORT, db=DB)
 
 
-class CarView(APIView):
+class TaskView(APIView):
     def __init__(self):
         super().__init__()
         self.db = DBUtils
